@@ -1,0 +1,327 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "expiry checker",
+            "intents": [
+                {
+                    "name": "AddObjectIntent",
+                    "slots": [
+                        {
+                            "name": "Object",
+                            "type": "LIST_OF_NAMES"
+                        }
+                    ],
+                    "samples": [
+                        "add {Object}",
+                        "create {Object}",
+                        "setup {Object}"
+                    ]
+                },
+                {
+                    "name": "AddDateIntent",
+                    "slots": [
+                        {
+                            "name": "Object",
+                            "type": "LIST_OF_NAMES"
+                        },
+                        {
+                            "name": "Dates",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "add expiry date {Dates} for {Object}",
+                        "remind {Object} will expire on {Dates}",
+                        "{Object} will expire on {Dates}"
+                    ]
+                },
+                {
+                    "name": "ListExpiryIntent",
+                    "slots": [
+                        {
+                            "name": "Object",
+                            "type": "LIST_OF_NAMES"
+                        }
+                    ],
+                    "samples": [
+                        "tell me expiry date for {Object}",
+                        "list the expiry date for {Object}",
+                        "what is the expiry date for {Object}"
+                    ]
+                },
+                {
+                    "name": "ClearExpiryIntent",
+                    "slots": [
+                        {
+                            "name": "Object",
+                            "type": "LIST_OF_NAMES"
+                        }
+                    ],
+                    "samples": [
+                        "clear expiry date for {Object}",
+                        "delete {Object}",
+                        "delete expiry date for {Object}",
+                        "clear {Object}"
+                    ]
+                },
+                {
+                    "name": "ResetIntent",
+                    "slots": [],
+                    "samples": [
+                        "clear",
+                        "reset"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_NAMES",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Bhujia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hot Dog"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Shake"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Milk Shake"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ice Cream"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sports drink"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tea"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Smoothie"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Soft Drink"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Juice"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Coffee"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Marshmallow"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fudge"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Frozen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pasteries"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Noodles"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sandwich"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Yogurt"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Salsa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Candy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pudding"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chicken"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bacon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Meat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pizza"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chicken Nuggets"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Frozen Pea"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fruits"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vegetables"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nachos"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Biscuits"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cookies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Oil"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Corn Flakes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fish"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Oats"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Peanut Butter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Butter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jam"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ketchup"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cheese"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cake"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bread"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chocolate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cold Drink"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chips"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
